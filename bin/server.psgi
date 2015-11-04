@@ -10,6 +10,7 @@ use Promised::Command;
 $ENV{LANG} = 'C';
 $ENV{TZ} = 'UTC';
 
+$Wanage::HTTP::UseXForwardedFor = 1;
 my $RootPath = path (__FILE__)->parent->parent->absolute;
 
 sub send_file ($$$) {
