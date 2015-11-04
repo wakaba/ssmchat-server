@@ -77,6 +77,9 @@ return sub {
   my $http = Wanage::HTTP->new_from_psgi_env ($_[0]);
   my $app = Warabe::App->new_from_http ($http);
 
+  $http->set_response_header
+      ('Strict-Transport-Security' => 'max-age=2592000; includeSubDomains; preload');
+
   return $app->execute_by_promise (sub {
     my $path = $app->path_segments;
     if (@$path == 1 and $path->[0] eq 'chat1') {
