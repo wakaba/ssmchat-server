@@ -38,7 +38,9 @@ pmbp-install: pmbp-upgrade
             --create-perl-command-shortcut @prove \
             --create-perl-command-shortcut @plackup=perl\ modules/twiggy-packed/script/plackup
 
-deps-app:
+deps-app: ssmchat
+
+ssmchat:
 	git clone https://bitbucket.org/wakabatan/ssmchat ssmchat
 
 create-commit-for-heroku:
