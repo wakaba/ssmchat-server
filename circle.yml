@@ -21,4 +21,4 @@ deployment:
   nightly:
     branch: nightly
     commands:
-      - curl -f -s -S --request POST --header "Authorization:token $GITHUB_ACCESS_TOKEN" --header "Content-Type:application/json" --data-binary "{\"base\":\"staging\",\"head\":\"`git rev-parse HEAD`\",\"commit_message\":\"auto-merge nightly into staging\"}" "https://api.github.com/repos/wakaba/ssmchat-server/merges"
+      - curl -f -s -S --request POST --header "Authorization:token $GITHUB_ACCESS_TOKEN" --header "Content-Type:application/json" --data-binary "{\"base\":\"nightly\",\"head\":\"`git rev-parse HEAD`\",\"commit_message\":\"auto-merge nightly into nightly\"}" "https://api.github.com/repos/wakaba/ssmchat-server/merges"
