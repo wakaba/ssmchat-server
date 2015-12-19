@@ -24,7 +24,7 @@ IO::Handle~1.28
 File::Spec~3.60
 LWP::MediaTypes~6.02
 Encode::Locale~1.05
-Unicode::Normalize~1.24
+Unicode::Normalize~1.25
 Jcode~2.07
 Path::Tiny~0.076
 URI~1.69
