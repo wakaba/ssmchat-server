@@ -1,5 +1,5 @@
 Net::SSLeay~1.72
-Pod::Usage~1.67
+Pod::Usage~1.68
 Pod::Text~4.04
 Test::NoWarnings~1.04
 IO::HTML~1.001
