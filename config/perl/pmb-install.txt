@@ -21,7 +21,7 @@ common::sense~3.74
 Unicode::Stringprep~1.105
 Scalar::Util~1.42
 IO::Handle~1.28
-File::Spec~3.60
+File::Spec~3.62
 LWP::MediaTypes~6.02
 Encode::Locale~1.05
 Unicode::Normalize~1.25
