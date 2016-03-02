@@ -6,8 +6,8 @@ IO::HTML~1.001
 Encode~2.82
 AnyEvent::Util
 Time::Local~1.2300
-AnyEvent~7.12
 parent~0.234
+AnyEvent~7.12
 Exporter::Lite~0.08
 Canary::Stability~2006
 AnyEvent::HTTP~2.22
@@ -21,12 +21,11 @@ common::sense~3.74
 Unicode::Stringprep~1.105
 Scalar::Util~1.43
 IO::Handle~1.28
-File::Spec~3.62
 LWP::MediaTypes~6.02
 Encode::Locale~1.05
 Unicode::Normalize~1.25
 Jcode~2.07
-Path::Tiny~0.076
+Path::Tiny~0.082
 URI~1.71
 Test::Tester~0.114
 Time::HiRes~1.9728
