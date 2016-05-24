@@ -1,5 +1,5 @@
 Net::SSLeay~1.74
-Pod::Usage~1.68
+Pod::Usage~1.69
 Pod::Text~4.07
 Test::NoWarnings~1.04
 IO::HTML~1.001
@@ -25,7 +25,7 @@ IO::Handle~1.28
 Encode::Locale~1.05
 Unicode::Normalize~1.25
 Jcode~2.07
-Path::Tiny~0.090
+Path::Tiny~0.094
 URI~1.71
 Test::Tester~1.302019
 Time::HiRes~1.9733
