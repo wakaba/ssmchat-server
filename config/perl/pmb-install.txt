@@ -27,7 +27,7 @@ Unicode::Normalize~1.25
 Jcode~2.07
 Path::Tiny~0.094
 URI~1.71
-Test::Tester~1.302031
+Test::Tester~1.302033
 Time::HiRes~1.9737
 HTTP::Date~6.02
 Carp~1.38
