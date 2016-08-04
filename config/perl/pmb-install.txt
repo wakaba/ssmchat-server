@@ -5,7 +5,7 @@ Canary::Stability~2011
 Carp~1.38
 Compress::Raw::Bzip2~2.069
 Compress::Raw::Zlib~2.069
-Encode~2.84
+Encode~2.85
 Encode::Locale~1.05
 Exporter::Lite~0.08
 File::Temp~0.2304
