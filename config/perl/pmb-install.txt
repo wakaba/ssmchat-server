@@ -7,7 +7,7 @@ Encode::Locale~1.05
 Exporter::Lite~0.08
 File::Temp~0.2304
 HTTP::Date~6.02
-HTTP::Request~6.11
+HTTP::Response~6.11
 IO::HTML~1.001
 IO::Handle~1.28
 Jcode~2.07
@@ -20,7 +20,7 @@ Pod::Text~4.09
 Pod::Usage~1.69
 Proc::Wait3~0.05
 Scalar::Util~1.46
-Time::HiRes~1.9740
+Time::HiRes~1.9741
 Time::Local~1.25
 URI~1.71
 common::sense~3.74
