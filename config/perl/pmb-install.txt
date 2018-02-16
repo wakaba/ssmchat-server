@@ -20,7 +20,7 @@ Pod::Text~4.10
 Pod::Usage~1.69
 Proc::Wait3~0.05
 Scalar::Util~1.49
-Time::HiRes~1.9753
+Time::HiRes~1.9754
 Time::Local~1.25
 URI~1.73
 common::sense~3.74
