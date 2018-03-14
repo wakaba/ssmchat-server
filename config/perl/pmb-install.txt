@@ -7,13 +7,13 @@ Encode::Locale~1.05
 Exporter::Lite~0.08
 File::Temp~0.2304
 HTTP::Date~6.02
-HTTP::Request~6.14
+HTTP::Request~6.15
 IO::HTML~1.001
 IO::Handle~1.28
 Jcode~2.07
 LWP::MediaTypes~6.02
 MIME::Base64~3.15
-Net::SSLeay~1.84
+Net::SSLeay~1.85
 Path::Class~0.37
 Path::Tiny~0.104
 Pod::Text~4.10
