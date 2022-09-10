@@ -2,7 +2,7 @@ FROM quay.io/wakaba/docker-perl-app-base
 
 ADD Makefile /app/
 ADD bin/ /app/bin/
-ADD lib/ /app/lib/
+#ADD lib/ /app/lib/
 ADD modules/ /app/modules/
 
 RUN cd /app && \
