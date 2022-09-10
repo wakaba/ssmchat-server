@@ -1,13 +1,14 @@
 {
   "circleci": {
     "pmbp": 1,
-    "heroku": 1,
     "merger": 1,
+    "docker-build": "quay.io/wakaba/suikacgi",
     "tests": [
       {"./plackup -p 5114 -t Twiggy::Prefork bin/server.psgi":
          {"background": true}},
       "sleep 10",
       "curl -f http://localhost:5114"
-    ]
+    ],
+    "gaa": false
   }
 }
