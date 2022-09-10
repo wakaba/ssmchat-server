@@ -1,6 +1,7 @@
 AnyEvent~7.17
 AnyEvent::HTTP~2.25
 Canary::Stability~2013
+CGI::Carp
 Carp~1.50
 Encode~3.06
 Encode::Locale~1.05
