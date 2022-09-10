@@ -44,9 +44,9 @@ pmbp-install: pmbp-upgrade
 deps-app: ssmchat kanzan
 
 ssmchat:
-	git clone https://bitbucket.org/wakabatan/ssmchat ssmchat
+	git clone https://bitbucket.org/wakabatan/ssmchat ssmchat || (cd ssmchat && git pull)
 kanzan:
-	git clone https://github.com/wakaba/kanzan-2002 local/kanzan
+	git clone https://github.com/wakaba/kanzan-2002 local/kanzan || (cd local/kanzan && git pull)
 	cp local/kanzan/config/perl/modules.txt config/perl/modules.kanzan.txt
 
 create-commit-for-heroku:
