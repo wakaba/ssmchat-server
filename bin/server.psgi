@@ -15,6 +15,7 @@ $ENV{TZ} = 'UTC';
 
 $Wanage::HTTP::UseXForwardedFor = 1;
 my $RootPath = path (__FILE__)->parent->parent->absolute;
+my $PerlPath = $RootPath->child ('perl');
 
 sub send_file ($$$) {
   my ($app, $file, $mime) = @_;
@@ -97,7 +98,7 @@ return sub {
     ## kanzan
     } elsif ($path->[0] eq 'kanzan') {
       shift @$path;
-      return Kanzan->main ($app, $path);
+      return Kanzan->main ($app, $path, $perl_path);
 
     } else {
       return $app->send_error (404);
