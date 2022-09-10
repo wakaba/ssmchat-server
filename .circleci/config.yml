@@ -16,6 +16,11 @@
             },
             {
                "run" : {
+                  "command" : "make deps"
+               }
+            },
+            {
+               "run" : {
                   "command" : "docker info"
                }
             },

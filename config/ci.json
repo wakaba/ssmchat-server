@@ -2,6 +2,7 @@
   "circleci": {
     "pmbp": 1,
     "merger": 1,
+    "build": ["make deps"],
     "docker-build": "quay.io/wakaba/suikacgi",
     "tests": [
       {"./plackup -p 5114 -t Twiggy::Prefork bin/server.psgi":
