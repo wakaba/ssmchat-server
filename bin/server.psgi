@@ -28,7 +28,11 @@ sub send_file ($$$) {
 
 sub run_cgi ($$$) {
   my ($app, $script_name, $file_path) = @_;
-  my $cmd = Promised::Command->new ([$RootPath->child ('perl'), $file_path]);
+  my $cmd = Promised::Command->new ([
+    $RootPath->child ('perl'),
+    '-I', $RootPath->child ('ssmchat'),
+    $file_path,
+  ]);
   $cmd->envs->{REQUEST_METHOD} = $app->http->request_method;
   $cmd->envs->{QUERY_STRING} = $app->http->original_url->{query};
   $cmd->envs->{CONTENT_LENGTH} = $app->http->request_body_length;
