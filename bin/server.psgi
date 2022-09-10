@@ -98,7 +98,7 @@ return sub {
     ## kanzan
     } elsif ($path->[0] eq 'kanzan') {
       shift @$path;
-      return Kanzan->main ($app, $path, $perl_path);
+      return Kanzan->main ($app, $path, $PerlPath);
 
     } else {
       return $app->send_error (404);
