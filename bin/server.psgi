@@ -7,6 +7,9 @@ use Wanage::HTTP;
 use Warabe::App;
 use Promised::Command;
 
+use lib glob path (__FILE__)->parent->parent->child ('local/kanzan/lib');
+use Kanzan;
+
 $ENV{LANG} = 'C';
 $ENV{TZ} = 'UTC';
 
@@ -82,12 +85,20 @@ return sub {
 
   return $app->execute_by_promise (sub {
     my $path = $app->path_segments;
+
+    ## ssmchat
     if (@$path == 1 and $path->[0] eq 'chat1') {
       return run_cgi ($app, '/chat1', $RootPath->child ('ssmchat/chat1.cgi'));
     } elsif (@$path == 1 and $path->[0] eq 'chat.css') {
       return send_file ($app, $RootPath->child ('ssmchat/chat.css'), 'text/css; charset=utf-8');
     } elsif (@$path == 1 and $path->[0] eq '') {
       return $app->send_redirect ('/chat1');
+
+    ## kanzan
+    } elsif ($path->[0] eq 'kanzan') {
+      shift @$path;
+      return Kanzan->main ($app, $path);
+
     } else {
       return $app->send_error (404);
     }
@@ -96,7 +107,7 @@ return sub {
 
 =head1 LICENSE
 
-Copyright 2015 Wakaba <wakaba@suikawiki.org>.
+Copyright 2015-2022 Wakaba <wakaba@suikawiki.org>.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

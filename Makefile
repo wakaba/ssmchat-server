@@ -41,10 +41,13 @@ pmbp-install: pmbp-upgrade
             --create-perl-command-shortcut @prove \
             --create-perl-command-shortcut @plackup=perl\ modules/twiggy-packed/script/plackup
 
-deps-app: ssmchat
+deps-app: ssmchat kanzan
 
 ssmchat:
 	git clone https://bitbucket.org/wakabatan/ssmchat ssmchat
+kanzan:
+	git clone https://github.com/wakaba/kanzan-2002 local/kanzan
+	cp local/kanzan/config/perl/modules.txt config/perl/modules.kanzan.txt
 
 create-commit-for-heroku:
 	git remote rm origin
