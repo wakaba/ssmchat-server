@@ -24,7 +24,8 @@ return sub {
     my $path = $app->path_segments;
 
     return $app->send_redirect
-        ('https://suika.suikawiki.org/~wakaba/-temp/wkchat' . $app->http->url->{path});
+        ('https://suika.suikawiki.org/~wakaba/-temp/wkchat' . $app->http->url->{path},
+         status => 301);
   });
 };
 
