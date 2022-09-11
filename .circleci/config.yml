@@ -177,6 +177,11 @@
             },
             {
                "run" : {
+                  "command" : "make deps"
+               }
+            },
+            {
+               "run" : {
                   "background" : true,
                   "command" : "./plackup -p 5114 -t Twiggy::Prefork bin/server.psgi"
                }

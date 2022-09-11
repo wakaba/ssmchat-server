@@ -6,6 +6,8 @@
     "build_generated_pmbp": true,
     "docker-build": "quay.io/wakaba/suikacgi",
     "tests": [
+      "make deps",
+      
       {"./plackup -p 5114 -t Twiggy::Prefork bin/server.psgi":
          {"background": true}},
       "sleep 10",
