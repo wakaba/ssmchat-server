@@ -52,7 +52,15 @@
             {
                "persist_to_workspace" : {
                   "paths" : [
-                     ".ciconfigtemp"
+                     ".ciconfigtemp",
+                     "deps",
+                     "local",
+                     "perl",
+                     "prove",
+                     "plackup",
+                     "lserver",
+                     "local-server",
+                     "rev"
                   ],
                   "root" : "./"
                }

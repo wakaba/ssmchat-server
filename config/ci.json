@@ -3,6 +3,7 @@
     "pmbp": 1,
     "merger": 1,
     "build": ["make deps"],
+    "build_generated_pmbp": true,
     "docker-build": "quay.io/wakaba/suikacgi",
     "tests": [
       {"./plackup -p 5114 -t Twiggy::Prefork bin/server.psgi":
