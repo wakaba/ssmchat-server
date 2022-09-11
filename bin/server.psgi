@@ -43,7 +43,7 @@ sub run_cgi ($$$) {
   $cmd->envs->{SERVER_NAME} = $app->http->url->{host};
   $cmd->envs->{SERVER_PORT} = $app->http->url->{port};
   $cmd->envs->{SCRIPT_NAME} = $script_name;
-  $cmd->envs->{REMOTE_ADDR} = $app->http->client_ip_addr->as_text;
+  $cmd->envs->{REMOTE_ADDR} = join ',', @{$app->http->client_ip_addr->{addrs}}; #XXX this is a private API
   #$cmd->envs->{PATH_INFO} = join '/', '', @$path[1..$#$path];
   $cmd->wd ($file_path->parent);
   $cmd->stdin ($app->http->request_body_as_ref);
