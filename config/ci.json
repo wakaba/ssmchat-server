@@ -7,6 +7,6 @@
       "sleep 10",
       "curl -f http://localhost:5114"
     ],
-    "make_deploy_branches": ["heroku"]
+    "make_deploy_branches": ["heroku2"]
   }
 }

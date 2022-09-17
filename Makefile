@@ -44,7 +44,7 @@ deps-app: ssmchat
 ssmchat:
 	git clone https://bitbucket.org/wakabatan/ssmchat ssmchat
 
-deploy-heroku: 
+deploy-heroku2: 
 	git checkout --orphan herokucommit && git commit -m "Heroku base"
 	make create-commit-for-heroku
 	git push git@heroku.com:$$HEROKU_APP_NAME2.git +`git rev-parse HEAD`:refs/heads/master

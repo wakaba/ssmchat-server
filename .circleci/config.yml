@@ -47,7 +47,7 @@
             },
             {
                "deploy" : {
-                  "command" : "if [ \u0022${CIRCLE_BRANCH}\u0022 == 'heroku' ]; then\u000Atrue\u000Amake deploy-heroku\u000Afi"
+                  "command" : "if [ \u0022${CIRCLE_BRANCH}\u0022 == 'heroku2' ]; then\u000Atrue\u000Amake deploy-heroku2\u000Afi"
                }
             }
          ]
